@@ -14,6 +14,7 @@ Currently it looks like this:
 The core functionality (adding and completing events is done). There's so UI tweaks left to be done and also added the ability to keep track of history.
 
 ## ToDo
--Switch to use Polaris library
--Store History of Completed Events
--UI fixes
+- <s> Adding and Completing events</s>
+- Switch to use Polaris library
+- Store History of Completed Events
+- UI fixes
