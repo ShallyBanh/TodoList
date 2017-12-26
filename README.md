@@ -9,7 +9,7 @@ Kind of wanted to learn react and i needed to find a better todo list app to kee
 ## Current Progress
 
 Currently it looks like this:
-![ScreenShot](https://github.com/ShallyBanh/TodoList/tree/master/todolist-app/public/currentlook.png)
+![ScreenShot](https://github.com/ShallyBanh/TodoList/blob/master/todolist-app/public/currentlook.png)
 
 The core functionality (adding and completing events is done). There's so UI tweaks left to be done and also added the ability to keep track of history.
 
