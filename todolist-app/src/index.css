@@ -7,13 +7,18 @@ body {
 
 .todoListMain .header input {
   padding: 10px;
+  margin-left: 1%;
   font-size: 16px;
   border: 2px solid #FFF;
-  width: 50%;
+  width: 90%;
 }
 
-h2{
-  color: #FFF;
+#title{
+  color: #000;
+  padding-left: 1%;
+  font-size: 3em;
+  line-height: 1.5em;
+  font-family: sans-serif;
 }
 .todoListMain .header button {
   padding: 10px;

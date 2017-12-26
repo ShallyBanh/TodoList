@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
+import moment from 'moment';
+import {
+  ResourceList,
+  Heading,
+} from '@shopify/polaris';
+import '@shopify/polaris/styles.css';
 
 class TodoList extends Component {
   constructor(props, context) {
@@ -17,9 +23,15 @@ class TodoList extends Component {
     var itemArray = this.state.items;
    
     if (this._inputElement.value !== "") {
+      var today = moment().format('MMMM Do YYYY, h:mm:ss a');
       itemArray.unshift({
-          text: this._inputElement.value,
-          key: Date.now()
+        attributeOne: this._inputElement.value,
+        attributeTwo: 'by Shally Banh',
+        attributeThree: today,
+        badges: [
+          {content: 'Whoa Shally\'s doing stuff'},
+        ],
+        actions: [ {content: "Complete", onClick: () => this.deleteItem(today)} ]
       });
    
       this.setState({
@@ -29,7 +41,7 @@ class TodoList extends Component {
       this._inputElement.value = "";
     }
    
-    console.log(itemArray);
+    console.log(this.state.items);
      
     e.preventDefault();
 
@@ -37,7 +49,7 @@ class TodoList extends Component {
 
   deleteItem(key) {
     var filteredItems = this.state.items.filter(function (item) {
-      return (item.key !== key);
+      return (item.attributeThree !== key);
     });
 
     this.setState({
@@ -50,14 +62,19 @@ class TodoList extends Component {
     return (
       <div className="todoListMain">
         <div className="header">
-          <h2> Shally's TodoList </h2>
+          <div id="title">Shallys Todo List</div>
           <form onSubmit={this.addItem}>
             <input ref={(a) => this._inputElement = a} placeholder="Enter Tasks For Today!">
             </input>
             <button type="submit">add</button>
           </form>
         </div>
-        <TodoItems entries={this.state.items} delete={this.deleteItem}/>
+        <ResourceList
+          items={this.state.items}
+          renderItem={(item, index) => {
+            return <ResourceList.Item key={index} {...item} />;
+          }}
+        />
       </div>
     );
   }
