@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  background-color: #66CCFF;
+  background-color: #3C3C3C;
   width: 100%;
   font-family: sans-serif;
 }
@@ -9,16 +9,20 @@ body {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #FFF;
-  width: 60%;
+  width: 50%;
+}
+
+h2{
+  color: #FFF;
 }
 .todoListMain .header button {
   padding: 10px;
   font-size: 16px;
   margin: 10px;
   margin-right: 0px;
-  background-color: #0066FF;
-  color: #FFF;
-  border: 2px solid #0066FF;
+  background-color: #F0FFFF;
+  color: #000;
+  border: 2px solid #F0FFFF;
 }
 .todoListMain .header button:hover {
   background-color: #003399;
@@ -28,7 +32,7 @@ body {
 .todoListMain .theList {
   list-style: none;
   padding-left: 0;
-  width: 60%;
+  width: 51%;
 }
 .todoListMain .theList li {
   color: #333;
