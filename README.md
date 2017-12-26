@@ -8,15 +8,16 @@ Kind of wanted to learn react and i needed to find a better todo list app to kee
 
 ## Current Progress
 
-Currently, before using polaris it looked like this:
-![ScreenShot](https://github.com/ShallyBanh/TodoList/tree/master/todolist-app/public/currentlook.png)
+Currently it looks like this:
+![ScreenShot](https://github.com/ShallyBanh/TodoList/blob/master/todolist-app/public/currentlook.png)
 
 Now, using polaris it looks like this:
-![ScreenShot](https://github.com/ShallyBanh/TodoList/tree/master/todolist-app/public/currentlookwithpolaris.png)
+![ScreenShot](https://github.com/ShallyBanh/TodoList/blob/master/todolist-app/public/currentlookwithpolaris.png)
 
 The core functionality (adding and completing events is done). There's so UI tweaks left to be done and also added the ability to keep track of history.
 
 ## ToDo
--Switch to use Polaris library
--Store History of Completed Events
--UI fixes
+- <s> Adding and Completing events</s>
+- <s>Switch to use Polaris library</s>
+- Store History of Completed Events
+- UI fixes
